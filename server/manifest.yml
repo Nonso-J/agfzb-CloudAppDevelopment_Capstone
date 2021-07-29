@@ -3,9 +3,11 @@
     routes:
       - route: host.domain
     memory: 128M
-    buildpack: python_buildpack
-  - name: dealerreiew-nginx
+    buildpack:
+	    - python_buildpack
+ - name: dealerreiew-nginx
     routes:
       - route: host.domain/static
     memory: 128M
-    buildpack: staticfile_buildpack
+    buildpack:
+	   - staticfile_buildpack
