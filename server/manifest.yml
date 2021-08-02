@@ -1,13 +1,13 @@
   applications:
   - name: dealerreiew
     routes:
-      - route: djangoapp.eu-gb.mybluemix.net
+      - route: djangoserver-space.eu-gb.mybluemix.net
     memory: 128M
     buildpacks:
      - python_buildpack
  - name: dealerreiew-nginx
     routes:
-      - route: djangoapp.eu-gb.mybluemix.net/static
+      - route: djangoserver-space.eu-gb.mybluemix.net/static
     memory: 128M
     buildpacks:
      - staticfile_buildpack
